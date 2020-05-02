@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: blanchedalmond;
+    padding: 50px;
+}
+.image{
+    border-radius: 0.5cm;
+}
+.text{
+    font-weight: bold;
+    font-size: 2cm;
+}
+.button{
+    align-items: baseline;
+    background-color: #1DB954;
+    padding: 15px 32px;
+    text-align: center;
+    margin-left: 4cm;
+    border-radius: 1cm;
+    font-size: medium;
+    font-weight: bold;
+    color:wheat;
+}
