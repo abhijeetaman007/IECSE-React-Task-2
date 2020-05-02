@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 //import './App.css';
-import './style.css'
+import './components/style.css'
 import image from './spotify.png'
-import songs from'./songlist'
+import songs from'./components/songlist'
+import Mybutton from './components/button'
 
 function App() {
   return (
     <div className="App">
-      <img className="" src={image}/>
-      <button className="button">P A U S E</button>
+      <img className="image" src={image} alt="image"/>
+      {/*<button className="button">P A U S E</button>*/}
+        <Mybutton/>
      <h1 className="text">Songs</h1>
      <div>
-  {songs.map(item => <div>
-    <h2>{item.id}. {item.name}
-    <br></br>
-  <h5>Artist: {item.artist}</h5>
+  {songs.map(item => 
+  <div>
+    <h1>{item.id}. {item.name}</h1>
+  <h3>Artist: {item.artist}</h3>
     <hr></hr>
-    </h2>
-    </div>)}
+  </div>)}
      </div>
     </div>
   );
